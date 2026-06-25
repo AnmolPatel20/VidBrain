@@ -1,0 +1,19 @@
+# Core
+streamlit>=1.35.0
+langchain-classic>=1.0.0
+langchain-core>=1.0.0
+langchain-text-splitters>=1.0.0
+langchain-groq>=0.1.0
+
+# Vector Store & Embeddings
+faiss-cpu>=1.8.0
+fastembed>=0.2.7
+
+# Transcript & Audio
+youtube-transcript-api>=1.0.0
+yt-dlp>=2024.4.9
+groq>=0.5.0
+pydub>=0.25.1
+
+# Environment
+python-dotenv>=1.0.0

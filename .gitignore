@@ -1,0 +1,30 @@
+# Environments
+.env
+.env.local
+.env.test
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Workspace / IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Large files / media
+*.mp4
+*.mkv
+*.avi
+
+# Local data / caches
+cache/
+temp/
