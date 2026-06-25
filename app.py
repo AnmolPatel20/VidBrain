@@ -874,7 +874,6 @@ else:
     st.markdown(
         """
         <div class="welcome-hero">
-            <div class="hero-icon">🧠</div>
             <h3>Paste a YouTube URL above to get started</h3>
             <p>
                 VidBrain extracts the video transcript, builds a knowledge base,
