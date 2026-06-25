@@ -2,7 +2,7 @@
 <h3 align="center">YouTube Video Q&A Chatbot — Powered by Groq</h3>
 
 <p align="center">
-  <img src="images/VidBrainDemo.gif" alt="VidBrain Demo" width="800"/>
+  <img src="VidBrainDemo.png" alt="VidBrain Demo" width="800"/>
 </p>
 
 <p align="center">
