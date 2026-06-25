@@ -1,4 +1,4 @@
-<h1 align="center">🧠 VidBrain</h1>
+<h1 align="center">🧠 VidBrain 🧠</h1>
 <h3 align="center">YouTube Video Q&A Chatbot — Powered by Groq</h3>
 
 <p align="center">
