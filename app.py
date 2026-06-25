@@ -78,48 +78,7 @@ html, body, div.stMarkdown, div.stButton button {
         radial-gradient(ellipse 50% 40% at 50% 90%, rgba(34, 211, 238, 0.05) 0%, transparent 50%);
 }
 
-.stApp::before {
-    content: '';
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 0;
-    background-image:
-        radial-gradient(circle 320px at 15% 25%, rgba(20, 184, 166, 0.09) 0%, transparent 100%),
-        radial-gradient(circle 250px at 80% 15%, rgba(6, 182, 212, 0.07) 0%, transparent 100%),
-        radial-gradient(circle 300px at 70% 75%, rgba(34, 211, 238, 0.06) 0%, transparent 100%),
-        radial-gradient(circle 200px at 30% 80%, rgba(20, 184, 166, 0.05) 0%, transparent 100%);
-    animation: bg-drift 20s ease-in-out infinite alternate;
-}
 
-@keyframes bg-drift {
-    0%   { transform: translate(0, 0) scale(1); }
-    25%  { transform: translate(15px, -10px) scale(1.02); }
-    50%  { transform: translate(-10px, 15px) scale(0.98); }
-    75%  { transform: translate(10px, 10px) scale(1.01); }
-    100% { transform: translate(-15px, -5px) scale(1); }
-}
-
-/* Subtle dot grid overlay */
-.stApp::after {
-    content: '';
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 0;
-    background-image: radial-gradient(circle 1px at center, rgba(148, 163, 184, 0.06) 0%, transparent 100%);
-    background-size: 28px 28px;
-}
-
-/* Ensure main content sits above the background */
-.stApp > * {
-    position: relative;
-    z-index: 1;
-}
 
 /* ---------- Root Palette ---------- */
 :root {
@@ -452,6 +411,7 @@ with st.sidebar:
         '<div class="sidebar-brand">'
         '<span class="brand-icon">🧠</span>'
         '<span class="brand-text">VidBrain</span>'
+        '<span style="font-size: 0.8rem; font-weight: 500; color: var(--text-secondary); margin-left: 0.4rem; vertical-align: middle; -webkit-text-fill-color: initial; letter-spacing: normal;">~ By Anmol</span>'
         '</div>'
         '<div class="sidebar-tagline">AI-Powered Video Intelligence</div>',
         unsafe_allow_html=True,
@@ -603,16 +563,7 @@ with st.sidebar:
             st.session_state[key] = DEFAULTS[key]
         st.rerun()
 
-    # --- Footer credit ---
-    st.markdown("---")
-    st.markdown(
-        '<div style="text-align: center; padding: 0.5rem 0 0.2rem;">'
-        '<span style="color: #64748b; font-size: 0.78rem; font-weight: 400;">'
-        '<span style="color: #14b8a6;">~</span> Made by <span style="font-weight: 600; color: #94a3b8;">Anmol</span>'
-        '</span>'
-        '</div>',
-        unsafe_allow_html=True,
-    )
+
 
 
 # ---------------------------------------------------------------------------
@@ -622,6 +573,7 @@ with st.sidebar:
 st.markdown(
     '<h1 class="main-header">'
     '<span class="brain-icon">🧠</span> VidBrain'
+    '<span style="font-size: 1.2rem; font-weight: 500; color: var(--text-secondary); margin-left: 0.6rem; vertical-align: middle; -webkit-text-fill-color: initial; letter-spacing: normal;">~ By Anmol</span>'
     '</h1>',
     unsafe_allow_html=True,
 )
